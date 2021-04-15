@@ -1,10 +1,12 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-namespace DataSide
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace FinalWebApp.Models
 {
-    public class Person
+    public class AssetListingModel
     {
-        [Key]
         public int id { get; set; }
         public string name { get; set; }
         public int age { get; set; }
@@ -12,7 +14,5 @@ namespace DataSide
         public string phoneNume { get; set; }
         public string email { get; set; }
         public string school { get; set; }
-
-
     }
 }
