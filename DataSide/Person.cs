@@ -14,6 +14,7 @@ namespace DataSide
         public string school { get; set; }
 
         //// lol buddy
+        /// Crazy
 
     }
 }
