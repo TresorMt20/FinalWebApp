@@ -13,5 +13,7 @@ namespace DataSide
         public string email { get; set; }
         public string school { get; set; }
 
+        //// lol buddy
+
     }
 }
