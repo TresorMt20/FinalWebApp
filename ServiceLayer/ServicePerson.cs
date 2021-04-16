@@ -15,6 +15,7 @@ namespace ServiceLayer
         public void Add(Person Newperson)
         {
             _context.Add(Newperson);
+            _context.SaveChanges();
         }
 
         public IEnumerable<Person> GetAll()

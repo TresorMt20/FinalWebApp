@@ -13,6 +13,10 @@ namespace DataSide
         public string email { get; set; }
         public string school { get; set; }
 
+        public Person()
+        {
+
+        }
         public Person(string name,int age,string addr,string phone,string email,string schol)
         {
             this.name = name;

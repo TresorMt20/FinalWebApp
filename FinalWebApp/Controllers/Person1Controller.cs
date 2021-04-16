@@ -24,7 +24,7 @@ namespace FinalWebApp.Controllers
 
         public string Gen()
         {
-            _assets.Add(new Person("Alpha", 24, "Bel", "45454", "@mail.com", "bel d nation"));
+           // _assets.Add(new Person("Alpha", 24, "Bel", "45454", "@mail.com", "bel d nation"));
 
             //IActionResult
             ////var assetmodel = _assets.GetAll();
