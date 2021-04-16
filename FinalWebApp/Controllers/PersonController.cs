@@ -22,7 +22,7 @@ namespace FinalWebApp.Controllers
             _assets = asset;
         }
 
-        public string Index()
+        public string Gen()
         {
             //IActionResult
             var assetmodel = _assets.GetAll();
