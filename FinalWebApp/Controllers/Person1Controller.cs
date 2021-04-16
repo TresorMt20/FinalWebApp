@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FinalWebApp.Controllers
 {
-    public class PersonController : Controller
+    public class Person1Controller : Controller
     {
         //public IActionResult Index()
         //{
@@ -17,7 +17,7 @@ namespace FinalWebApp.Controllers
 
         private IPersonInterf _assets;
 
-        public PersonController(IPersonInterf asset)
+        public Person1Controller(IPersonInterf asset)
         {
             _assets = asset;
         }
