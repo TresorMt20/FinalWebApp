@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ServiceLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,8 @@ namespace FinalWebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSingleton(Configuration);
+            services.AddScoped<IPersonInterf, ServicePerson>();
             services.AddDbContext<ContextPersonDb>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 

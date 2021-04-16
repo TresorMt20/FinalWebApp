@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataSide\DataSide.csproj" />
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
   </ItemGroup>
 
 </Project>
