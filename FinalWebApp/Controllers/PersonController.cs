@@ -17,8 +17,9 @@ namespace FinalWebApp.Controllers
             _assets = asset;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
+            //IActionResult
             var assetmodel = _assets.GetAll();
 
             var listingResult = assetmodel.Select(result => new AssetListingModel
@@ -38,7 +39,9 @@ namespace FinalWebApp.Controllers
                 Assets=listingResult
             };
 
-            return View(model);
+            // return View(model);
+
+            return "lol wecol oooooo go";
         }
     }
 }
