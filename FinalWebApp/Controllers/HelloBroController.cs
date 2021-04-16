@@ -12,5 +12,10 @@ namespace FinalWebApp.Controllers
         {
             return "lol guys come on";
         }
+
+        public IActionResult Index1()
+        {
+            return View();
+        }
     }
 }
