@@ -11,6 +11,12 @@ namespace ServiceLayer
         {
             _context = context;
         }
+
+        public void Add(Person Newperson)
+        {
+            _context.Add(Newperson);
+        }
+
         public IEnumerable<Person> GetAll()
         {
             return _context.people;

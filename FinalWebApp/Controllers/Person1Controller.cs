@@ -24,25 +24,27 @@ namespace FinalWebApp.Controllers
 
         public string Gen()
         {
+            _assets.Add(new Person("Alpha", 24, "Bel", "45454", "@mail.com", "bel d nation"));
+
             //IActionResult
-            var assetmodel = _assets.GetAll();
+            ////var assetmodel = _assets.GetAll();
 
-            var listingResult = assetmodel.Select(result => new AssetListingModel
-            {
-                id = result.id,
-                name = result.name,
-                age = result.age,
-                address = result.address,
-                phoneNume = result.phoneNume,
-                email = result.email,
-                school = result.school
+            ////var listingResult = assetmodel.Select(result => new AssetListingModel
+            ////{
+            ////    id = result.id,
+            ////    name = result.name,
+            ////    age = result.age,
+            ////    address = result.address,
+            ////    phoneNume = result.phoneNume,
+            ////    email = result.email,
+            ////    school = result.school
 
-            });
+            ////});
 
-            var model = new AssetIndexModel()
-            {
-                Assets = listingResult
-            };
+            ////var model = new AssetIndexModel()
+            ////{
+            ////    Assets = listingResult
+            ////};
 
             // return View(model);
 

@@ -9,5 +9,7 @@ namespace DataSide
   public  interface IPersonInterf
     {
         IEnumerable<Person> GetAll();
+
+        void Add(Person Newperson);
     }
 }
